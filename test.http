@@ -1,0 +1,17 @@
+GET http://localhost:5000/api/v1/bootcamps?page=2 HTTP/1.1
+
+###
+
+POST http://localhost:5000/api/v1/bootcamps HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/v1/bootcamps/1 HTTP/1.1
+
+###
+
+PUT http://localhost:5000/api/v1/bootcamps/1 HTTP/1.1
+
+###
+
+DELETE http://localhost:5000/api/v1/bootcamps/1 HTTP/1.1
