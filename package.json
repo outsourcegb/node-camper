@@ -18,5 +18,8 @@
     "node-geocoder": "^3.27.0",
     "nodemon": "^2.0.4",
     "slugify": "^1.4.0"
+  },
+  "devDependencies": {
+    "constantinople": "^4.0.1"
   }
 }
