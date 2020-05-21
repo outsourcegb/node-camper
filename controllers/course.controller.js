@@ -93,3 +93,21 @@ exports.updateCourse = asyncHandler(async (req, res, next) => {
     },
   });
 });
+
+exports.deleteCourse = asyncHandler(async (req, res, next) => {
+  const courseId = req.params.courseId;
+  let course = await Course.findById(courseId);
+
+  if (!course) {
+    new ErrorResponse(`Course with id ${courseId} is not found`, 404);
+  }
+
+  await Course.remove();
+
+  res.status(200).json({
+    success: true,
+    data: {
+      course: {},
+    },
+  });
+});
